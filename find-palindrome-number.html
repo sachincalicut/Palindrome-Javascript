@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var rem, temp, result=0, number;
+        number=12325;
+        temp= number;
+        while(number >0){
+            rem = number%10;
+            number = parseInt(number/10);
+            result = result*10+rem;
+        }
+        if(result == temp){
+            document.write(result+ "is Palindrome");
+
+        }else{
+            document.write(result+ "is not Palindrome");
+        }
+
+    </script>
+</body>
+</html>
